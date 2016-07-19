@@ -1,0 +1,110 @@
+/* Colors ---------------------------------------------- */
+
+// Font Colors
+$linkcolor: #a62425;
+$titleFontColor: #a62425;
+$facebook_blue: #3a589d;
+$font-color: #222222;
+$sitetitleColor: #FFF5CC;
+$sitetitleHover: #E4DBB4; 
+// Background colors: 
+
+$bkgoundContent: #FFFFFF; // 
+$menuBarbkg: #D14719; //
+$headerbkground: #62738A; 
+$main-menu-border: #ECECEC;
+// other colors
+
+$light-gold:  #f1dfbb;   //or #FCE7B9
+$check-avail-gold: #ECE1C2;
+$gold: #BB7E23;// or #B17B1A;
+$photocredit-grey: #808080;
+$bhi-blue-grey: #62738A;
+/* Typography ------------------------------------------ */
+
+
+.reach-logo:before {
+	content: url('images/reach-favicon.png');
+	padding-right: 3px;
+}
+/* global stuff */
+.wp-caption-text {
+	float: right;
+	font-style: italic;
+	color: $photocredit-grey;
+}
+.bhi-caption-center {
+	.wp-caption-text {
+		float: none;
+	}
+}
+
+
+/* global classes */
+.bhi-clear {
+	clear: both;
+}
+
+.bhi-package-box {
+	margin-top:15px;
+}
+.bhi-box-ml {
+	.content-box-column  {
+		margin-left: 30px;
+	}
+}
+.bhi-box-mt {
+	.content-box-column {
+		margin-top: 30px;
+	}
+}
+
+input[type=submit],
+.wpcf7-form .wpcf7-form-control.wpcf7-submit,
+.wpcf7-form input[type="submit"],
+.wpcf7-submit,
+.fusion-body .fusion-button-large, 
+.button-large, 
+.button.large, 
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+	padding-top: 11px;
+	padding-bottom: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.otw-button-wrap input[type=submit] { // trying to style all submit buttons the same. (ones that are not targetted by Avada theme)
+   background: #80011f;
+    color: #ffffff;
+    background-image: -webkit-gradient( linear, left bottom, left top, from( #600010 ), to( #80011f ) );
+    background-image: linear-gradient( to top, #600010, #80011f );
+    background-image: -webkit-linear-gradient( to top, #600010, #80011f );
+    background-image: -moz-linear-gradient( to top, #600010, #80011f );
+    background-image: -ms-linear-gradient( to top, #600010, #80011f );
+    background-image: -o-linear-gradient( to top, #600010, #80011f );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80011f, endColorstr=#600010);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', Arial, Helvetica, sans-serif;
+}
+.fusion-button.bhi-book-now {
+	font-size: 18px;
+}
+footer .wpcf7-form-control.wpcf7-email{
+	height: 36px;
+}
+
+.fusion-content-boxes .content-wrapper-background {
+	padding-bottom: 10px;
+}
+.fusion-title {
+	overflow: initial;
+}
+.bhi-caviat {
+	font-style: italic;
+	font-size: smaller;
+	line-height: normal;
+}

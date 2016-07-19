@@ -1,0 +1,89 @@
+/*
+Theme Name: Bar Harbor Inn
+Description: Child theme of Avada for Bar Harbor Inn
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+@import "partials/settings";
+
+
+/* ***** header part  ***** */
+.fusion-header-v4 .fusion-header {
+	// turn off table display in header:
+	border-bottom: 1px solid $light-gold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.fusion-logo {
+		display: block;
+
+		.fusion-logo-link,
+		.bhi_site_title_wrapper { // both
+			float: left;
+		}
+		.fusion-logo-link {
+			padding-top: 10px;
+			//padding-left: 30px;
+			img {
+				height: 50px;
+				margin-top: 10px;
+			}
+		}
+
+		.bhi_site_title {
+			padding-top: 30px;
+			padding-left: 20px;
+			//font-family: 'Droid Serif', Arial, Helvetica, serif;
+			font-family: Vidaloka, Arial, Helvetica, serif;
+			font-weight: 700;
+			a {
+				text-shadow: 1px 1px 2px $gold;
+			}
+			a:hover {
+				color: $font-color;
+			}
+		}
+
+		.fusion-header-content-3-wrapper {
+			padding-top: 10px;
+			float: right;
+		}
+		.bhi-header-phone { // phone number next to the book now in the header
+			font-size: 22px;
+			font-weight: bold;
+			font-family: 'Vidaloka', Arial, Helvetica, serif;
+		}
+	}
+}
+	.bhi_site_title_wrapper {
+		.bhi_site_title {
+			font-size: 3em	;
+
+			font-family: 'Playfair Display', Georgia, serif;
+			margin-bottom: 0px;
+		}
+	}
+
+/* ***** homepage slideshow */
+#sliders-container .slide-content-container {
+  	top: 85%;
+  	width: 85%; 
+  	.buttons {
+  		margin-top: 15px;
+  	}
+ }
+
+/* *****  content part ***** */
+#wrapper #main {
+	padding-top: 35px;
+
+}
+
+/* *****  sidebars ***** */
+
+/* *****  footer ***** */
+
+
+/* **** media ******* */
+@import "partials/media";

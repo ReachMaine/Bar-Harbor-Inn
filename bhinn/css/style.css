@@ -1,0 +1,685 @@
+/*
+Theme Name: Bar Harbor Inn
+Description: Child theme of Avada for Bar Harbor Inn
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+/* global stuff */
+.wp-caption-text {
+  float: right;
+  font-style: italic;
+  color: gray; }
+
+.bhi-caption-center .wp-caption-text {
+  float: none; }
+
+/* global classes */
+.bhi-clear {
+  clear: both; }
+
+.bhi-package-box {
+  margin-top: 15px; }
+
+.bhi-box-ml .content-box-column {
+  margin-left: 30px; }
+
+.bhi-box-mt .content-box-column {
+  margin-top: 30px; }
+
+input[type=submit],
+.wpcf7-form .wpcf7-form-control.wpcf7-submit,
+.wpcf7-form input[type="submit"],
+.wpcf7-submit,
+.fusion-body .fusion-button-large,
+.button-large,
+.button.large,
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+  padding-top: 11px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.otw-button-wrap input[type=submit] {
+  background: #80011f;
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#600010), to(#80011f));
+  background-image: linear-gradient(to top, #600010, #80011f);
+  background-image: -webkit-linear-gradient(to top, #600010, #80011f);
+  background-image: -moz-linear-gradient(to top, #600010, #80011f);
+  background-image: -ms-linear-gradient(to top, #600010, #80011f);
+  background-image: -o-linear-gradient(to top, #600010, #80011f);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80011f, endColorstr=#600010);
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  text-transform: uppercase;
+  font-family: 'Crimson Text', Arial, Helvetica, sans-serif; }
+
+.fusion-button.bhi-book-now {
+  font-size: 18px; }
+
+footer .wpcf7-form-control.wpcf7-email {
+  height: 36px; }
+
+.fusion-content-boxes .content-wrapper-background {
+  padding-bottom: 10px; }
+
+.fusion-title {
+  overflow: initial; }
+
+.bhi-caviat {
+  font-style: italic;
+  font-size: smaller;
+  line-height: normal; }
+
+/*** check availability boxes styling *******/
+/* ** both boxes (underslider on homepage & in sidebar)  ** */
+#underslider-wrapper,
+#sidebar .bhi-check-avail-sidebar {
+  background-color: #ece1c2; }
+
+/* **  box under slider  ** */
+#underslider-wrapper .underslider {
+  padding: 5px 0px;
+  max-width: 1160px;
+  margin: 0px auto; }
+  #underslider-wrapper .underslider .bhi-checkavail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  #underslider-wrapper .underslider .bhi-top-checkavail {
+    float: left;
+    padding-left: 10px; }
+    #underslider-wrapper .underslider .bhi-top-checkavail .bhi-checkavail-label {
+      float: left;
+      line-height: 40px;
+      padding-right: 3px; }
+  #underslider-wrapper .underslider .wpcf7-form-control-wrap {
+    padding-left: 3px; }
+  #underslider-wrapper .underslider .wpcf7-form .wpcf7-date,
+  #underslider-wrapper .underslider .wpcf7-form .wpcf7-number,
+  #underslider-wrapper .underslider .wpcf7-form .wpcf7-text {
+    height: 32px; }
+  #underslider-wrapper .underslider .wpcf7-form .wpcf7-date {
+    max-width: 140px;
+    padding-right: 0px; }
+  #underslider-wrapper .underslider .wpcf7-form .wpcf7-number {
+    max-width: 66px; }
+
+/* **  in sidebar  ** */
+#sidebar .bhi-check-avail-sidebar .wpcf7-submit {
+  margin-top: 20px; }
+
+@media only screen and (max-width: 800px) {
+  #underslider-wrapper .underslider {
+    max-width: 710px; } }
+/* event on Calendar styleing */
+.evoWV_days .evo_wv_day span.num_events {
+  display: none; }
+
+/* ***** header part  ***** */
+.fusion-header-v4 .fusion-secondary-header {
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
+  border-bottom: 0px; }
+  .fusion-header-v4 .fusion-secondary-header ul#menu-topbar li {
+    border-left: 0px; }
+    .fusion-header-v4 .fusion-secondary-header ul#menu-topbar li a {
+      display: block; }
+  .fusion-header-v4 .fusion-secondary-header ul#menu-topbar li:not(:first-child):before {
+    content: "|";
+    float: left;
+    padding-top: 9px; }
+.fusion-header-v4 .fusion-header {
+  background-color: #62738a !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px; }
+  .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link img {
+    height: 130px !important;
+    float: left; }
+  .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title {
+    font-weight: 700;
+    margin-bottom: 0px; }
+    .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title a {
+      font-size: 70px;
+      line-height: 72px;
+      text-shadow: 2px 3px 5px #1A2027;
+      color: #fff5cc; }
+      .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title a .firstletter {
+        font-size: larger; }
+    .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title a:hover {
+      color: #e4dbb4; }
+  .fusion-header-v4 .fusion-header .fusion-logo .fusion-header-content-3-wrapper {
+    padding-top: 10px; }
+  .fusion-header-v4 .fusion-header .fusion-logo .bhi-header-phone {
+    font-size: 27px;
+    color: white; }
+    .fusion-header-v4 .fusion-header .fusion-logo .bhi-header-phone a {
+      color: white; }
+  .fusion-header-v4 .fusion-header .fusion-mobile-menu-icons a {
+    font-size: 30px; }
+
+.fusion-header-wrapper.fusion-is-sticky .fusion-header-v4 .fusion-sticky-header-wrapper .fusion-header {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  .fusion-header-wrapper.fusion-is-sticky .fusion-header-v4 .fusion-sticky-header-wrapper .fusion-header .fusion-logo .fusion-logo-link {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    visibility: hidden; }
+    .fusion-header-wrapper.fusion-is-sticky .fusion-header-v4 .fusion-sticky-header-wrapper .fusion-header .fusion-logo .fusion-logo-link img {
+      height: 0px !important;
+      margin-bottom: 0px; }
+
+/**** main menu styling ***/
+.fusion-main-menu .sub-menu li {
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec; }
+
+.fusion-main-menu .sub-menu li:last-child {
+  border-bottom: 1px solid #ececec;
+  border-radius: 3px; }
+
+/* ***** homepage slideshow */
+#sliders-container .slide-content-container {
+  padding-left: 5% !important;
+  top: 82%; }
+  #sliders-container .slide-content-container .buttons {
+    margin-top: 15px; }
+
+.main-flex .slide-content h2.title-heading-left {
+  font-family: 'Italianno', cursive;
+  text-shadow: 0px 0px 10px #000;
+  letter-spacing: 3px; }
+
+/* *****  content part ***** */
+.fusion-page-title-row {
+  overflow: visible; }
+  .fusion-page-title-row h1.entry-title {
+    /* padding-left: 5%; */
+    text-shadow: 1px 1px 1px #000000; }
+
+.fusion-content-boxes.bhi-wide-box .content-box-column,
+.content-box-column.bhi-wide-box .content-box-column {
+  margin-bottom: 10px; }
+  .fusion-content-boxes.bhi-wide-box .content-box-column .content-wrapper-background,
+  .content-box-column.bhi-wide-box .content-box-column .content-wrapper-background {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px; }
+
+.bhi_homepage_feature_boxes {
+  padding-bottom: 0px; }
+
+.bhi-wider-box {
+  margin-right: 1%;
+  width: 24%; }
+
+.bhi-box .content-box-column {
+  margin-bottom: 0px !important; }
+  .bhi-box .content-box-column .content-wrapper-background {
+    padding-top: 16px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .bhi-box .content-box-column .content-wrapper-background .content-container p {
+      line-height: 24px; }
+
+.bhi-bottom-box {
+  padding-bottom: 0px; }
+
+#bhi-special-bkgd {
+  height: 200px;
+  background-color: #f1dfbb;
+  background: url("images/special_background.jpg"); }
+
+.bhi-flexbox-container .fusion-layout-column {
+  /*border around spa boxes for flexbox*/
+  border: 3px solid #cbaa5c; }
+
+.bhi-flexbox-container .fusion-row {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* #bhi-specials { // specials content box on homepage
+	.content-box-column {
+		margin-bottom: 0px;
+		.col  {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		h1 {
+			margin-bottom: 0px;
+		}
+	}
+}
+#bhi-specials-wrapper {
+	max-width: 1500px;
+	margin: auto;
+	#bhi-specials-box {
+		margin-bottom: 0px!important;
+		.col.content-wrapper-background{
+			padding-top: 10px;
+		}
+	}
+}*/
+#wrapper #main {
+  padding-top: 22px;
+  padding-bottom: 22px; }
+  #wrapper #main .fusion-row.bhi-inside-row {
+    padding-left: 30px;
+    padding-right: 30px; }
+
+.bhi-contact-form {
+  padding: 15px;
+  border: 1px solid #62738a;
+  border-radius: 4px;
+  background-color: #ece1c2; }
+
+li {
+  line-height: 1.4em; }
+
+div#content a {
+  font-weight: bold;
+  color: #666666; }
+
+div#content a:hover {
+  color: #712a2a; }
+
+div.bhi-area-info-box h2 {
+  margin-bottom: .1em; }
+
+div.bhi-area-info-box p {
+  line-height: 26px; }
+
+div.bhi-meetings-button {
+  height: 50px; }
+
+div#sidebar div.fusion-button-wrapper {
+  width: 100%; }
+
+/* tables */
+.table-1 tr:nth-child(even), .tkt-slctr-tbl-wrap-dv tr:nth-child(even) {
+  background-color: rgba(165, 138, 75, 0.46); }
+
+.table-1 tr td, .tkt-slctr-tbl-wrap-dv tr td {
+  padding: 5px 10px; }
+
+/* Columns */
+.fusion-layout-column.bhi-testimonial-col {
+  margin-right: 2%; }
+
+.fusion-one-third.bhi-testimonial-col {
+  width: 31.6666%; }
+
+/* Team Members */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.team-member {
+  width: 32%;
+  padding: 10px;
+  border: 1px solid #cbaa5c;
+  border-radius: 5px;
+  margin: 8px 0px; }
+  .team-member .member {
+    margin: 5px 0px;
+    text-align: center;
+    line-height: 30px; }
+  .team-member .role {
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 5px; }
+  .team-member .team-member-text .bhi-team-since {
+    text-align: center;
+    margin-bottom: 5px;
+    font-style: italic; }
+  .team-member .team-member-text .panel-group {
+    border-top: 1px solid #f1dfbb; }
+  .team-member .team-member-text .fusion-accordian .panel-title a .fa-fusion-box {
+    background-color: #62738a; }
+  .team-member .team-member-text .fusion-accordian .panel-title .fusion-toggle-icon-wrapper {
+    float: none;
+    text-align: center; }
+  .team-member .team-member-text .fusion-accordian .panel-title .fusion-toggle-heading {
+    display: none; }
+  .team-member .team-member-text .fusion-accordian .panel-body {
+    margin-top: 0px; }
+  .team-member .author-details {
+    margin: 0px; }
+
+.team-member figure {
+  margin: 0px 4px 0px 0px;
+  width: 100%;
+  text-align: center; }
+
+.team-member img {
+  border-radius: 5px; }
+
+div.fusion-toggle-heading {
+  padding: 5px; }
+
+@media (max-width: 768px) {
+  .team-member figure {
+    width: 100%;
+    text-align: center; } }
+@media (max-width: 540px) {
+  .team-member {
+    width: 95%; } }
+/* Area Info, History and Room Layout Page Tabs */
+div.bhi-careers-tabs p {
+  line-height: 24px; }
+
+div.bhi-history-tabs a.tab-link, div.bhi-area-info-tabs a.tab-link, div.bhi-room-layout-tabs a.tab-link, div.bhi-bayview-tabs a.tab-link, div.bhi-careers-tabs a.tab-link, div.bhi-luxury-tabs a.tab-link {
+  padding: 2px 10px !important;
+  border-color: #cbaa5c !important; }
+
+div.bhi-history-tabs h4, div.bhi-area-info-tabs h4, div.bhi-room-layout-tabs h4, div.bhi-bayview-tabs h4, div.bhi-careers-tabs h4, div.bhi-luxury-tabs h4 {
+  color: white !important; }
+
+div.bhi-history-tabs h4:hover, div.bhi-area-info-tabs h4:hover, div.bhi-room-layout-tabs h4:hover, div.bhi-bayview-tabs h4:hover, div.bhi-careers-tabs h4:hover, div.bhi-luxury-tabs h4:hover {
+  color: #62738a !important; }
+
+div.bhi-history-tabs li.active h4, div.bhi-area-info-tabs li.active h4, div.bhi-room-layout-tabs li.active h4, div.bhi-bayview-tabs li.active h4, div.bhi-careers-tabs li.active h4, div.bhi-luxury-tabs li.active h4 {
+  color: black !important; }
+
+.fusion-tabs.vertical-tabs.bhi-area-info-tabs .tab-content h2 {
+  margin-bottom: .1em; }
+
+.fusion-tabs.vertical-tabs.bhi-history-tabs .tab-content h2 {
+  margin-bottom: .1em;
+  margin-left: 0px; }
+
+.fusion-tabs.vertical-tabs.bhi-history-tabs .tab-content h2 a {
+  padding-left: 0px; }
+
+@media (min-width: 768px) {
+  .fusion-tabs.vertical-tabs.bhi-area-info-tabs .nav-tabs {
+    width: 21.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-history-tabs .nav-tabs {
+    width: 13.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-room-layout-tabs .nav-tabs {
+    width: 16%; }
+
+  .fusion-tabs.vertical-tabs.bhi-bayview-tabs .nav-tabs {
+    width: 39.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-careers-tabs .nav-tabs {
+    width: 18.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-luxury-tabs .nav-tabs {
+    width: 25.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-area-info-tabs .tab-content {
+    width: 73%; }
+
+  .fusion-tabs.vertical-tabs.bhi-history-tabs .tab-content {
+    width: 86%; }
+
+  .fusion-tabs.vertical-tabs.bhi-room-layout-tabs .tab-content {
+    width: 83.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-bayview-tabs .tab-content {
+    width: 60.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-careers-tabs .tab-content {
+    width: 81.5%; }
+
+  .fusion-tabs.vertical-tabs.bhi-luxury-tabs .tab-content {
+    width: 74.5%; } }
+.bhi-rooms-tabs .fusion-tabs.vertical-tabs .tab-pane {
+  padding: 5px; }
+.bhi-rooms-tabs img {
+  max-width: 265px; }
+
+div.bhi-spa-icon div.heading-with-icon {
+  background-color: #8DAEA5;
+  width: 100% !important;
+  padding: 5px; }
+
+div.bhi-spa-icon div.heading-with-icon h2 {
+  color: white; }
+
+/*.bhi-spa-icon {
+	i:before {
+		content: "";
+	}
+	
+}
+.bhi-spa-icon.bhi-spa-massage {
+	i {
+		background:url(images/spa/rocks-icon.png);
+		background-size: cover;
+	}
+
+}
+.bhi-spa-icon.bhi-spa-body {
+	i {
+		background:url(images/spa/body-icon.png);
+		background-size: cover;
+	}
+
+}
+.bhi-spa-icon.bhi-spa-facials {
+	i {
+		background:url(images/spa/body-icon.png);
+		background-size: cover;
+	}
+
+}
+.bhi-spa-icon.bhi-spa-nails {
+	i {
+		background:url(images/spa/body-icon.png);
+		background-size: cover;
+	}
+
+}
+.bhi-spa-icon.bhi-spa-beauty {
+	i {
+		background:url(images/spa/body-icon.png);
+		background-size: cover;
+	}
+
+}
+.bhi-spa-icon.bhi-spa-bridal {
+	i {
+		background:url(images/spa/body-icon.png);
+		background-size: cover;
+	}
+
+}*/
+/* ********************  sidebars ******************** */
+#sidebar, #sidebar h4.widget-title, #sidebar input.wpcf7-form-control, .otw-submit {
+  font-family: 'Muli', Arial, Helvetica, sans-serif !important;
+  font-size: .9em !important;
+  line-height: 1.4em !important; }
+
+#sidebar h4.widget-title {
+  font-weight: bold;
+  margin-bottom: 8px; }
+#sidebar .bhi-sidebar-tight {
+  margin-bottom: 10px; }
+#sidebar .bhi-sidebar-form, #sidebar .bhi-contact-form {
+  padding: 15px;
+  border: 1px solid #62738a;
+  border-radius: 4px;
+  background-color: #ece1c2; }
+  #sidebar .bhi-sidebar-form .widget-title, #sidebar .bhi-contact-form .widget-title {
+    text-align: center;
+    font-weight: bold; }
+#sidebar .open-table-widget .otw-button-wrap {
+  text-align: center; }
+  #sidebar .open-table-widget .otw-button-wrap .otw-submit {
+    border: 0px; }
+#sidebar .bhi-dining-breakfast ul li:before {
+  content: "•";
+  /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #62738a;
+  /* Or a color you prefer */ }
+#sidebar .bhi-sidebar-menu img {
+  border-radius: 4px; }
+#sidebar blockquote.easy_testimonial {
+  border: 1px solid #bb7e23;
+  border-radius: 4px;
+  background-color: #f1dfbb;
+  padding-top: 0px; }
+  #sidebar blockquote.easy_testimonial .easy_testimonial_title {
+    font-size: 15px;
+    color: #947538; }
+  #sidebar blockquote.easy_testimonial p {
+    color: #947538; }
+
+.sidebar .fusion-button-wrapper {
+  margin-top: 10px;
+  width: 250px; }
+
+#singletestimonialwidget-2 {
+  top: 50px; }
+
+/* ********************  footer ******************** */
+.bhi-bottom-branding {
+  padding-bottom: 10px; }
+
+footer {
+  font-family: 'Muli', Arial, Helvetica, sans-serif; }
+  footer .widget .widget-title {
+    margin-bottom: 0px; }
+  footer .widget .textwidget p {
+    margin-top: 6px;
+    line-height: 24px; }
+  footer .fusion-footer-menu {
+    text-transform: uppercase;
+    padding-bottom: 10px; }
+  footer .fusion-copyright-content .fusion-copyright-notice {
+    text-align: right; }
+  footer .fusion-copyright-content .fusion-social-links-footer {
+    text-align: left; }
+    footer .fusion-copyright-content .fusion-social-links-footer .custom:before {
+      content: "\f262";
+      font-family: fontawesome; }
+
+/* *****  woo-commerce ***** */
+.products {
+  display: flex;
+  flex-wrap: wrap; }
+
+.catalog-ordering.clearfix {
+  display: none; }
+
+form.woocommerce-ordering {
+  display: none; }
+
+.product_title {
+  font-size: 32px;
+  display: none; }
+
+.price .suggested-text {
+  padding-right: 5px; }
+.price .amount {
+  font-size: 30px !important;
+  font-weight: bold; }
+
+.minimum-price .minimum-text {
+  padding-right: 5px; }
+
+input#nyp {
+  max-width: 120px;
+  color: #222; }
+
+#content .woocommerce a.button {
+  color: #FFF; }
+
+/* **** media ******* */
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+.fusion-secondary-main-menu .fusion-mobile-nav-holder .fusion-mobile-nav-item a {
+  font-size: 22px; }
+
+/* Avada breakpoints */
+/* 
+ * (max-width: 800px)  -  for rev slider
+ * (max-width: 640px)
+ * (min-width: 768px)
+*/
+@media only screen and (min-width: 1300px) {
+  .fusion-header .fusion-logo .fusion-logo-link img {
+    margin-bottom: -40px; } }
+@media only screen and (max-width: 1024px) {
+  .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link {
+    display: none; } }
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 800px) {
+  .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link {
+    display: none; }
+  .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title_wrapper {
+    padding-right: 34px; }
+  .fusion-header-v4 .fusion-header .fusion-logo .fusion-header-content-3-wrapper {
+    padding-left: 24px; }
+
+  #bhi-specials-box {
+    margin-top: -376px !important; }
+
+  .hide-mobile {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    visibility: hidden; } }
+@media only screen and (max-width: 500px) {
+  .fusion-header-wrapper .fusion-secondary-header .fusion-secondary-menu {
+    display: none; }
+
+  .fusion-header-v4 .fusion-header {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important; }
+    .fusion-header-v4 .fusion-header .fusion-header-content-3-wrapper {
+      padding-left: 33%; }
+    .fusion-header-v4 .fusion-header .fusion-mobile-menu-icons {
+      margin-top: 56px; } }
+@media only screen and (max-width: 400px) {
+  .fusion-header-v4 .fusion-header .fusion-header-content-3-wrapper {
+    padding-left: 25%; } }
+@media only screen and (max-width: 360px) {
+  .fusion-header-v4 .fusion-header .fusion-header-content-3-wrapper {
+    padding-left: 15%; } }
+@media only screen and (min-width: 800px) {
+  #bhi-specials-wrapper {
+    padding-left: 5%;
+    padding-right: 5%; }
+
+  #bhi-specials-box {
+    margin-left: 20px;
+    margin-top: -176px !important; } }
+@media only screen and (max-width: 1023px) {
+  .fusion-mobile-menu-design-modern.fusion-header-v4 .fusion-logo a {
+    float: left !important; }
+
+  .fusion-header-content-3-wrapper {
+    float: left; }
+
+  .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link img {
+    margin-bottom: 0px; }
+  .fusion-header-v4 .fusion-header .bhi_site_title_wrapper .bhi_site_title a {
+    padding-top: 35px;
+    font-size: 55px;
+    padding-left: 10px;
+    padding-right: 10px; } }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */

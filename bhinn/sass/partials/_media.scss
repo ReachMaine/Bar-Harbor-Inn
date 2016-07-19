@@ -1,0 +1,156 @@
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+
+// mobile nave stuff
+.fusion-secondary-main-menu {
+	.fusion-mobile-nav-holder {
+		.fusion-mobile-nav-item a {
+			font-size: 22px;
+		}
+	}
+}
+
+/* Avada breakpoints */
+/* 
+ * (max-width: 800px)  -  for rev slider
+ * (max-width: 640px)
+ * (min-width: 768px)
+*/ 
+@media only screen and (min-width: 1300px) {  // point at which logo need to stay up (not overlay the menu bar)
+	.fusion-header {
+		.fusion-logo {
+			.fusion-logo-link {
+				img {
+					margin-bottom: -40px; // 
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1024px) { //ipad width in landscape 
+	.fusion-header-v4 .fusion-header {
+		.fusion-logo {
+			.fusion-logo-link { // dont show logo
+				display: none;
+			}
+		}
+	}
+}
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 800px)  { // mobile
+	.fusion-header-v4 .fusion-header {
+		.fusion-logo {
+			.fusion-logo-link { // dont show logo
+				display: none;
+			}
+			.bhi_site_title_wrapper {
+				padding-right: 34px; // give space for mobile menu - move mobile menu down instead?
+			}
+			.fusion-header-content-3-wrapper {
+				padding-left: 24px;
+			}
+		}
+		
+	}
+	
+	#bhi-specials-box {
+		margin-top: -376px!important;
+	}
+	.hide-mobile {
+		display: none;
+		padding: 0px;
+		margin: 0px;
+		visibility: hidden;
+	}
+}
+@media only screen and (max-width: 500px)  { // kinda arbitary - for smaller (phone) size
+	.fusion-header-wrapper .fusion-secondary-header {
+		.fusion-secondary-menu {
+			display: none;
+		}
+
+	}
+	.fusion-header-v4 .fusion-header {
+		padding-top: 5px!important;
+		padding-bottom: 5px!important;
+		.fusion-header-content-3-wrapper {
+			padding-left: 33%;
+		}
+		.fusion-mobile-menu-icons {
+			//margin-top: 74px;
+			margin-top: 56px;
+		}
+	}
+}
+@media only screen and (max-width: 400px)  { // another kinda arbitary - for smaller (phone) size
+	.fusion-header-v4 .fusion-header {
+		.fusion-header-content-3-wrapper {
+			padding-left: 25%;
+		}
+		
+	}
+}
+@media only screen and (max-width: 360px)  { // another kinda arbitary - for even smaller (phone) size
+	.fusion-header-v4 .fusion-header {
+		.fusion-header-content-3-wrapper {
+			padding-left: 15%;
+		}
+		
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 950px) {
+
+}
+
+@media only screen and (min-width: 800px) { // break for some stuff - bigger than mobile
+	#bhi-specials-wrapper {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	
+	#bhi-specials-box {
+		margin-left: 20px; 
+		margin-top: -176px!important;
+	}
+	
+}
+// mobile menu size.
+@media only screen and (max-width: 1023px) { // point at which right links disables & mobile menu appears
+	.fusion-mobile-menu-design-modern.fusion-header-v4 .fusion-logo a {
+		float: left!important;
+	}
+	.fusion-header-content-3-wrapper {
+			float: left;
+		}
+	.fusion-header-v4 .fusion-header {
+		.fusion-logo .fusion-logo-link img {
+			margin-bottom: 0px;
+		} 
+		.bhi_site_title_wrapper .bhi_site_title a {
+			padding-top: 35px;
+		    font-size: 55px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		}
+	}
+	
+}
+
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+}
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+}
+
+/* X-Large Displays: 1400px and up */
+@media only screen and (min-width: 90em) {
+	}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+	}
+

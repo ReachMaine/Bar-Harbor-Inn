@@ -1,0 +1,61 @@
+
+/*** check availability boxes styling *******/
+
+/* ** both boxes (underslider on homepage & in sidebar)  ** */
+#underslider-wrapper, 
+#sidebar .bhi-check-avail-sidebar {
+	background-color: $check-avail-gold;
+}
+/* **  box under slider  ** */
+#underslider-wrapper {
+	//max-width: 1500px;
+	//margin: auto;
+	.underslider {
+		padding: 5px 0px;
+		max-width: 1160px;
+    	margin: 0px auto;
+    	.bhi-checkavail-wrapper {
+    		display: flex;
+    		flex-wrap: wrap;
+    		justify-content: space-around;
+    	}
+		.bhi-top-checkavail {
+			float: left;
+			padding-left: 10px;
+			.bhi-checkavail-label {
+				float: left;
+				line-height: 40px;
+				padding-right: 3px;
+			}
+		}
+		.wpcf7-form-control-wrap {
+			padding-left: 3px;
+		}
+		.wpcf7-form .wpcf7-date, 
+		.wpcf7-form .wpcf7-number, 
+		 .wpcf7-form .wpcf7-text {
+		 		height: 32px;
+		 }
+		 .wpcf7-form .wpcf7-date {
+		 	max-width: 140px;
+		 	padding-right: 0px;
+		 }
+		 .wpcf7-form .wpcf7-number {
+		 	max-width: 66px;
+		 }
+	}
+}
+/* **  in sidebar  ** */
+
+#sidebar .bhi-check-avail-sidebar {
+	
+	.wpcf7-submit {
+		margin-top: 20px;
+
+	}
+}
+@media only screen and (max-width: 800px)  { // mobile
+	#underslider-wrapper .underslider {
+		max-width: 710px;
+	}
+}
