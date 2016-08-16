@@ -120,12 +120,21 @@ Text Domain:  Avada
   	.buttons {
   		margin-top: 15px;
   	}
+  	.fusion-title-sc-wrapper {
+  		width: inherit; // zig 16aug16
+  		.fusion-title {
+  			width: inherit; // zig 16aug16
+  			overflow: visible;
+  		}
+  	}
  }
 .main-flex .slide-content h2.title-heading-left {
  	font-family: 'Italianno', cursive;
  	text-shadow: 0px 0px 10px #000;
  	letter-spacing: 3px;
  	//font-size: 40px!important; can be set for each slide on slide options.
+ 	width: inherit; // zig 16Aug16
+
  }
 
 
