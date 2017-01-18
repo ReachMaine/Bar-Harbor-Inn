@@ -81,6 +81,22 @@ footer .wpcf7-form-control.wpcf7-email {
   font-size: smaller;
   line-height: normal; }
 
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform; }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1); }
+
 /*** check availability boxes styling *******/
 /* ** both boxes (underslider on homepage & in sidebar)  ** */
 #underslider-wrapper,
@@ -189,6 +205,16 @@ footer .wpcf7-form-control.wpcf7-email {
 .fusion-main-menu .sub-menu li:last-child {
   border-bottom: 1px solid #ececec;
   border-radius: 3px; }
+
+/** homepage promo widget */
+#homepromo-wrapper {
+  height: 0px;
+  position: relative;
+  z-index: 200;
+  text-align: right; }
+  #homepromo-wrapper .bhi-home-promo {
+    padding-top: 2%;
+    padding-right: 2%; }
 
 /* ***** homepage slideshow */
 #sliders-container .slide-content-container {
@@ -464,7 +490,7 @@ div.bhi-spa-icon div.heading-with-icon h2 {
 	i:before {
 		content: "";
 	}
-	
+
 }
 .bhi-spa-icon.bhi-spa-massage {
 	i {
@@ -618,7 +644,7 @@ input#nyp {
   font-size: 22px; }
 
 /* Avada breakpoints */
-/* 
+/*
  * (max-width: 800px)  -  for rev slider
  * (max-width: 640px)
  * (min-width: 768px)
@@ -631,6 +657,9 @@ input#nyp {
     display: none; } }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 800px) {
+  #homepromo-wrapper .bhi-home-promo img {
+    height: 200px; }
+
   .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link {
     display: none; }
   .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title_wrapper {
@@ -647,6 +676,9 @@ input#nyp {
     margin: 0px;
     visibility: hidden; } }
 @media only screen and (max-width: 500px) {
+  #homepromo-wrapper .bhi-home-promo img {
+    height: 125px; }
+
   .fusion-header-wrapper .fusion-secondary-header .fusion-secondary-menu {
     display: none; }
 

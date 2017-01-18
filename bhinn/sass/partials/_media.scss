@@ -13,23 +13,23 @@
 }
 
 /* Avada breakpoints */
-/* 
+/*
  * (max-width: 800px)  -  for rev slider
  * (max-width: 640px)
  * (min-width: 768px)
-*/ 
+*/
 @media only screen and (min-width: 1300px) {  // point at which logo need to stay up (not overlay the menu bar)
 	.fusion-header {
 		.fusion-logo {
 			.fusion-logo-link {
 				img {
-					margin-bottom: -40px; // 
+					margin-bottom: -40px; //
 				}
 			}
 		}
 	}
 }
-@media only screen and (max-width: 1024px) { //ipad width in landscape 
+@media only screen and (max-width: 1024px) { //ipad width in landscape
 	.fusion-header-v4 .fusion-header {
 		.fusion-logo {
 			.fusion-logo-link { // dont show logo
@@ -40,6 +40,12 @@
 }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 800px)  { // mobile
+	#homepromo-wrapper {
+		.bhi-home-promo img {
+			height: 200px;
+		}
+
+	}
 	.fusion-header-v4 .fusion-header {
 		.fusion-logo {
 			.fusion-logo-link { // dont show logo
@@ -52,9 +58,9 @@
 				padding-left: 24px;
 			}
 		}
-		
+
 	}
-	
+
 	#bhi-specials-box {
 		margin-top: -376px!important;
 	}
@@ -66,6 +72,12 @@
 	}
 }
 @media only screen and (max-width: 500px)  { // kinda arbitary - for smaller (phone) size
+	#homepromo-wrapper {
+		.bhi-home-promo img {
+			height: 125px;
+		}
+
+	}
 	.fusion-header-wrapper .fusion-secondary-header {
 		.fusion-secondary-menu {
 			display: none;
@@ -89,7 +101,7 @@
 		.fusion-header-content-3-wrapper {
 			padding-left: 25%;
 		}
-		
+
 	}
 }
 @media only screen and (max-width: 360px)  { // another kinda arbitary - for even smaller (phone) size
@@ -97,7 +109,7 @@
 		.fusion-header-content-3-wrapper {
 			padding-left: 15%;
 		}
-		
+
 	}
 }
 
@@ -110,12 +122,12 @@
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	
+
 	#bhi-specials-box {
-		margin-left: 20px; 
+		margin-left: 20px;
 		margin-top: -176px!important;
 	}
-	
+
 }
 // mobile menu size.
 @media only screen and (max-width: 1023px) { // point at which right links disables & mobile menu appears
@@ -128,7 +140,7 @@
 	.fusion-header-v4 .fusion-header {
 		.fusion-logo .fusion-logo-link img {
 			margin-bottom: 0px;
-		} 
+		}
 		.bhi_site_title_wrapper .bhi_site_title a {
 			padding-top: 35px;
 		    font-size: 55px;
@@ -136,7 +148,7 @@
 		    padding-right: 10px;
 		}
 	}
-	
+
 }
 
 /* Medium Displays: 768px - 1279px */
@@ -153,4 +165,3 @@
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
 	}
-

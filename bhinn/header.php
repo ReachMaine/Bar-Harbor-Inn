@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<?php /* modifications 
-	18Jan16 zig 
-		- add GTM function 
+<?php /* modifications
+	18Jan16 zig
+		- add GTM function
 		- add google font Driod Serif
-	9Feb16 zig 
+	9Feb16 zig
 		- add widget area for check availability box
 	2May16 zig - add font-awesome v4.6.1
 */ ?>
@@ -170,8 +170,16 @@ if ( 'modern' == Avada()->settings->get( 'mobile_menu_design' ) ) {
 		<?php if ( 'Left' == Avada()->settings->get( 'header_position' ) || 'Right' == Avada()->settings->get( 'header_position' ) ) : ?>
 			<?php avada_side_header(); ?>
 		<?php endif; ?>
-
+		<?php if ( is_front_page() && is_active_sidebar( 'home-promo') ) { /* zig */
+			echo '<div id="homepromo-wrapper" >';
+			echo 	'<div class="bhi-home-promo">';
+						dynamic_sidebar( 'home-promo' );
+			echo 	'</div>';
+			echo '</div>';
+		} else { echo '<!-- notactive home-promo -->';
+		}  ?>
 		<div id="sliders-container">
+
 			<?php
 			if ( is_search() ) {
 				$slider_page_id = '';
@@ -194,7 +202,7 @@ if ( 'modern' == Avada()->settings->get( 'mobile_menu_design' ) ) {
 			} ?>
 		</div>
 
-		<?php if ( is_active_sidebar( 'under-slider') ) { /* zig */ 
+		<?php if ( is_active_sidebar( 'under-slider') ) { /* zig */
 
 			echo '<div id="underslider-wrapper" >';
 			echo 	'<div class="underslider">';

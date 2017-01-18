@@ -6,12 +6,12 @@ $titleFontColor: #a62425;
 $facebook_blue: #3a589d;
 $font-color: #222222;
 $sitetitleColor: #FFF5CC;
-$sitetitleHover: #E4DBB4; 
-// Background colors: 
+$sitetitleHover: #E4DBB4;
+// Background colors:
 
-$bkgoundContent: #FFFFFF; // 
+$bkgoundContent: #FFFFFF; //
 $menuBarbkg: #D14719; //
-$headerbkground: #62738A; 
+$headerbkground: #62738A;
 $main-menu-border: #ECECEC;
 // other colors
 
@@ -63,9 +63,9 @@ input[type=submit],
 .wpcf7-form .wpcf7-form-control.wpcf7-submit,
 .wpcf7-form input[type="submit"],
 .wpcf7-submit,
-.fusion-body .fusion-button-large, 
-.button-large, 
-.button.large, 
+.fusion-body .fusion-button-large,
+.button-large,
+.button.large,
 #tribe-bar-form .tribe-bar-submit input[type=submit] {
 	padding-top: 11px;
 	padding-bottom: 8px;
@@ -107,4 +107,22 @@ footer .wpcf7-form-control.wpcf7-email{
 	font-style: italic;
 	font-size: smaller;
 	line-height: normal;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }

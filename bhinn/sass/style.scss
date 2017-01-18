@@ -46,7 +46,7 @@ Text Domain:  Avada
 				}
 			}
 
-			.bhi_site_title { 
+			.bhi_site_title {
 				font-weight: 700;
 				margin-bottom: 0px;
 				a {
@@ -86,7 +86,7 @@ Text Domain:  Avada
 // sticky header - when stuck.
 	.fusion-header-wrapper.fusion-is-sticky .fusion-header-v4 .fusion-sticky-header-wrapper .fusion-header {
 		padding-top: 0px;
-		padding-bottom: 0px;		
+		padding-bottom: 0px;
 		.fusion-logo {
 			.fusion-logo-link {
 				display: none;
@@ -110,13 +110,24 @@ Text Domain:  Avada
 	border-bottom: 1px solid $main-menu-border;
 	border-radius: 3px;
 }
+/** homepage promo widget */
+#homepromo-wrapper {
+	 height: 0px; 
+	position: relative;
+	z-index: 200;
+	text-align: right;
+	.bhi-home-promo {
+		padding-top: 2%;
+		padding-right: 2%;
+	}
 
+}
 /* ***** homepage slideshow */
 #sliders-container .slide-content-container {
 	//margin-top: 22px !important;
 	padding-left: 5%!important; //  45px !important;
   	top: 82%; //85%;
-  	//width: 85%; 
+  	//width: 85%;
   	.buttons {
   		margin-top: 15px;
   	}
@@ -148,7 +159,7 @@ Text Domain:  Avada
 		text-shadow: 1px 1px 1px #000000;
 	}
 }
-// content boxes 
+// content boxes
 .fusion-content-boxes.bhi-wide-box, // used on spa page boxes.
 .content-box-column.bhi-wide-box { // wider content boxes - knock down some of the padding.
 	.content-box-column {
@@ -347,7 +358,7 @@ div#sidebar div.fusion-button-wrapper {
 					display: none;
 				}
 			}
-			
+
 			.panel-body {
 				margin-top: 0px;
 			}
@@ -439,19 +450,19 @@ div.bhi-history-tabs li.active h4, div.bhi-area-info-tabs li.active h4, div.bhi-
 
 	.fusion-tabs.vertical-tabs.bhi-room-layout-tabs .nav-tabs {
 		width: 16%;
-	}	
+	}
 
 	.fusion-tabs.vertical-tabs.bhi-bayview-tabs .nav-tabs {
 		width: 39.5%;
-	}		
+	}
 
 	.fusion-tabs.vertical-tabs.bhi-careers-tabs .nav-tabs {
 		width: 18.5%;
-	}	
+	}
 
 	.fusion-tabs.vertical-tabs.bhi-luxury-tabs .nav-tabs {
 		width: 25.5%;
-	}	
+	}
 
 	.fusion-tabs.vertical-tabs.bhi-area-info-tabs .tab-content {
 		width: 73%;
@@ -467,7 +478,7 @@ div.bhi-history-tabs li.active h4, div.bhi-area-info-tabs li.active h4, div.bhi-
 
 	.fusion-tabs.vertical-tabs.bhi-bayview-tabs .tab-content {
 		width: 60.5%;
-	}	
+	}
 
 	.fusion-tabs.vertical-tabs.bhi-careers-tabs .tab-content {
 		width: 81.5%;
@@ -502,7 +513,7 @@ div.bhi-spa-icon div.heading-with-icon h2 {
 	i:before {
 		content: "";
 	}
-	
+
 }
 .bhi-spa-icon.bhi-spa-massage {
 	i {
@@ -571,7 +582,7 @@ div.bhi-spa-icon div.heading-with-icon h2 {
 			text-align: center;
 			font-weight: bold;
 		}
-		
+
 	}
 	.open-table-widget {// open table widget.
 		.otw-button-wrap { //  the "find a table" button
@@ -596,7 +607,7 @@ div.bhi-spa-icon div.heading-with-icon h2 {
    			border-radius: 4px;
    		}
    }
-  	// testimonials in sidebar 
+  	// testimonials in sidebar
   	blockquote.easy_testimonial {
   		border: 1px solid $gold;
   		border-radius: 4px;
@@ -609,7 +620,7 @@ div.bhi-spa-icon div.heading-with-icon h2 {
   		p {
   			color: #947538;
   		}
-  		
+
   	}
 }
 
@@ -638,7 +649,7 @@ footer {
 		}
 	}
 
-	
+
 	.fusion-footer-menu { // under regular footer, above copyright
 		text-transform: uppercase;
 		//font-family: 'Muli', Arial, Helvetica, sans-serif;
@@ -649,7 +660,7 @@ footer {
 		//font-family: 'Muli', Arial, Helvetica, sans-serif;
 		.fusion-copyright-notice {
 			text-align: right;
-			
+
 		}
 		.fusion-social-links-footer {
 			text-align: left;
@@ -694,7 +705,7 @@ display: none;
 		font-size: 30px !important;
 		font-weight: bold;
 	}
-} 
+}
 .minimum-price {
 	.minimum-text {
 		padding-right: 5px;

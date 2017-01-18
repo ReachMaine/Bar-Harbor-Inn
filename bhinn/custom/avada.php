@@ -1,5 +1,5 @@
-<?php 
-	// add the tagline next to the logo 
+<?php
+	// add the tagline next to the logo
 	add_action('avada_logo_append', 'bhi_site_tagline', 10);
 	function bhi_site_tagline() {
 		$html_out = '';
@@ -36,6 +36,16 @@
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
+	// add widget area under slideshow for checkavailability box.
+
+	register_sidebar( array(
+		'name'          => 'Home Promo' ,
+		'id'            => 'home-promo',
+		'before_widget' => '<div id="%1$s" class="bhi_homepromo widget %2$s">',
+		'after_widget'  => '<div style="clear:both;"></div></div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
 
 	// add widget area above footer - to be used for branding
 
@@ -47,7 +57,3 @@
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
-
-
-
-
