@@ -649,6 +649,11 @@ input#nyp {
  * (max-width: 640px)
  * (min-width: 768px)
 */
+@media only screen and (min-width: 1600px) {
+  #homepromo-wrapper .bhi-home-promo {
+    padding-right: 0px;
+    position: absolute;
+    right: 20%; } }
 @media only screen and (min-width: 1300px) {
   .fusion-header .fusion-logo .fusion-logo-link img {
     margin-bottom: -40px; } }

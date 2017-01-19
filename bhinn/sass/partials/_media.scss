@@ -18,6 +18,16 @@
  * (max-width: 640px)
  * (min-width: 768px)
 */
+@media only screen and (min-width: 1600px) {
+	#homepromo-wrapper {
+		.bhi-home-promo {
+			padding-right: 0px;
+			position: absolute;
+			right: 20%;
+		}
+
+	}
+}
 @media only screen and (min-width: 1300px) {  // point at which logo need to stay up (not overlay the menu bar)
 	.fusion-header {
 		.fusion-logo {
