@@ -112,7 +112,7 @@ Text Domain:  Avada
 }
 /** homepage promo widget */
 #homepromo-wrapper {
-	 height: 0px; 
+	 height: 0px;
 	position: relative;
 	z-index: 200;
 	text-align: right;
@@ -250,6 +250,51 @@ Text Domain:  Avada
 	.fusion-row.bhi-inside-row {
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+}
+// Styling individual vacation package pages
+.bhi-vacation-package-details {
+	padding: 0px 20px !important;
+	background-color: #e0e0e0 !important;
+	ul {
+		padding-left: 20px;
+		margin-top: 0px;
+	}
+	.bhi-vacation-package-availability{
+		margin-bottom: 0px !important;
+		.fusion-column-wrapper {
+			background-color: white;
+			padding: 0px 10px !important;
+			margin-top: 10px;
+			display: inline-block;
+		}
+		h3, h4 {
+			display: inline-block;
+		}
+		h3 {
+			margin-bottom: 0px;
+			margin-top: 5px;
+		}
+		h4 {
+			margin-top: 0px;
+		}
+	}
+	.fusion-one-half {
+		margin-bottom: 0px !important;
+		h3 {
+			margin-top: .25em;
+			margin-bottom: 0px;
+		}
+	}
+	.fusion-one-half.fusion-column-last .fusion-column-wrapper {
+		padding-left: 15px;
+	}
+	.fusion-one-full {
+		margin-bottom: 0px !important;
+		p {
+			line-height: 1em;
+			font-weight: bold;
+		}
 	}
 }
 // contact form
