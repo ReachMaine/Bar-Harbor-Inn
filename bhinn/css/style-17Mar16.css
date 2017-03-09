@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Bar Harbor Inn
 Description: Child theme of Avada for Bar Harbor Inn
@@ -15,7 +16,7 @@ Text Domain:  Avada
 .wp-caption-text {
   float: right;
   font-style: italic;
-  color: gray; }
+  color: #808080; }
 
 .bhi-caption-center .wp-caption-text {
   float: none; }
@@ -81,11 +82,27 @@ footer .wpcf7-form-control.wpcf7-email {
   font-size: smaller;
   line-height: normal; }
 
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform; }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1); }
+
 /*** check availability boxes styling *******/
 /* ** both boxes (underslider on homepage & in sidebar)  ** */
 #underslider-wrapper,
 #sidebar .bhi-check-avail-sidebar {
-  background-color: #ece1c2; }
+  background-color: #ECE1C2; }
 
 /* **  box under slider  ** */
 #underslider-wrapper .underslider {
@@ -133,7 +150,7 @@ footer .wpcf7-form-control.wpcf7-email {
     float: left;
     padding-top: 6px; }
 .fusion-header-v4 .fusion-header {
-  background-color: #62738a !important;
+  background-color: #62738A !important;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px; }
@@ -147,11 +164,11 @@ footer .wpcf7-form-control.wpcf7-email {
       font-size: 70px;
       line-height: 72px;
       text-shadow: 2px 3px 5px #1A2027;
-      color: #fff5cc; }
+      color: #FFF5CC; }
       .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title a .firstletter {
         font-size: larger; }
     .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title a:hover {
-      color: #e4dbb4; }
+      color: #E4DBB4; }
   .fusion-header-v4 .fusion-header .fusion-logo .fusion-header-content-3-wrapper {
     padding-top: 10px; }
   .fusion-header-v4 .fusion-header .fusion-logo .bhi-header-phone {
@@ -174,11 +191,11 @@ footer .wpcf7-form-control.wpcf7-email {
 
 /**** main menu styling ***/
 .fusion-main-menu .sub-menu li {
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec; }
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC; }
 
 .fusion-main-menu .sub-menu li:last-child {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ECECEC;
   border-radius: 3px; }
 
 /* ***** homepage slideshow */
@@ -189,7 +206,7 @@ footer .wpcf7-form-control.wpcf7-email {
     margin-top: 15px; }
 
 .main-flex .slide-content h2.title-heading-left {
-  font-family: 'Yellowtail', Arial, Helvetica, cursive;
+  font-family: 'Yellowtail',  Arial, Helvetica, cursive;
   letter-spacing: 3px; }
 
 /* *****  content part ***** */
@@ -260,7 +277,7 @@ footer .wpcf7-form-control.wpcf7-email {
   padding: 15px;
   border: 1px solid #62738a;
   border-radius: 4px;
-  background-color: #ece1c2; }
+  background-color: #ECE1C2; }
 
 /* ********************  sidebars ******************** */
 #sidebar h4.widget-title {
@@ -272,7 +289,7 @@ footer .wpcf7-form-control.wpcf7-email {
   padding: 15px;
   border: 1px solid #62738a;
   border-radius: 4px;
-  background-color: #ece1c2; }
+  background-color: #ECE1C2; }
   #sidebar .bhi-sidebar-form .widget-title, #sidebar .bhi-contact-form .widget-title {
     text-align: center;
     font-weight: bold; }
@@ -284,12 +301,12 @@ footer .wpcf7-form-control.wpcf7-email {
   content: "•";
   /* Insert content that looks like bullets */
   padding-right: 8px;
-  color: #62738a;
+  color: #62738A;
   /* Or a color you prefer */ }
 #sidebar .bhi-sidebar-menu img {
   border-radius: 4px; }
 #sidebar blockquote.easy_testimonial {
-  border: 1px solid #bb7e23;
+  border: 1px solid #BB7E23;
   border-radius: 4px;
   background-color: #f1dfbb;
   padding-top: 0px; }
@@ -348,11 +365,16 @@ form.woocommerce-ordering {
   font-size: 22px; }
 
 /* Avada breakpoints */
-/* 
+/*
  * (max-width: 800px)  -  for rev slider
  * (max-width: 640px)
  * (min-width: 768px)
 */
+@media only screen and (min-width: 1600px) {
+  #homepromo-wrapper .bhi-home-promo {
+    padding-right: 0px;
+    position: absolute;
+    right: 20%; } }
 @media only screen and (min-width: 1300px) {
   .fusion-header .fusion-logo .fusion-logo-link img {
     margin-bottom: -40px; } }
@@ -361,6 +383,9 @@ form.woocommerce-ordering {
     display: none; } }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 800px) {
+  #homepromo-wrapper .bhi-home-promo img {
+    height: 200px; }
+
   .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link {
     display: none; }
   .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title_wrapper {
@@ -377,6 +402,9 @@ form.woocommerce-ordering {
     margin: 0px;
     visibility: hidden; } }
 @media only screen and (max-width: 500px) {
+  #homepromo-wrapper .bhi-home-promo img {
+    height: 125px; }
+
   .fusion-header-wrapper .fusion-secondary-header .fusion-secondary-menu {
     display: none; }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Bar Harbor Inn
 Description: Child theme of Avada for Bar Harbor Inn
@@ -15,7 +16,7 @@ Text Domain:  Avada
 .wp-caption-text {
   float: right;
   font-style: italic;
-  color: gray; }
+  color: #808080; }
 
 .bhi-caption-center .wp-caption-text {
   float: none; }
@@ -86,7 +87,7 @@ footer .wpcf7-form-control.wpcf7-email {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px transparent;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
@@ -101,7 +102,7 @@ footer .wpcf7-form-control.wpcf7-email {
 /* ** both boxes (underslider on homepage & in sidebar)  ** */
 #underslider-wrapper,
 #sidebar .bhi-check-avail-sidebar {
-  background-color: #ece1c2; }
+  background-color: #ECE1C2; }
 
 /* **  box under slider  ** */
 #underslider-wrapper .underslider {
@@ -155,7 +156,7 @@ footer .wpcf7-form-control.wpcf7-email {
     float: left;
     padding-top: 9px; }
 .fusion-header-v4 .fusion-header {
-  background-color: #62738a !important;
+  background-color: #62738A !important;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -170,11 +171,11 @@ footer .wpcf7-form-control.wpcf7-email {
       font-size: 70px;
       line-height: 72px;
       text-shadow: 2px 3px 5px #1A2027;
-      color: #fff5cc; }
+      color: #FFF5CC; }
       .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title a .firstletter {
         font-size: larger; }
     .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title a:hover {
-      color: #e4dbb4; }
+      color: #E4DBB4; }
   .fusion-header-v4 .fusion-header .fusion-logo .fusion-header-content-3-wrapper {
     padding-top: 10px; }
   .fusion-header-v4 .fusion-header .fusion-logo .bhi-header-phone {
@@ -199,11 +200,11 @@ footer .wpcf7-form-control.wpcf7-email {
 
 /**** main menu styling ***/
 .fusion-main-menu .sub-menu li {
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec; }
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC; }
 
 .fusion-main-menu .sub-menu li:last-child {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ECECEC;
   border-radius: 3px; }
 
 /** homepage promo widget */
@@ -312,11 +313,44 @@ footer .wpcf7-form-control.wpcf7-email {
     padding-left: 30px;
     padding-right: 30px; }
 
+.bhi-vacation-package-details {
+  padding: 0px 20px !important;
+  background-color: #e0e0e0 !important; }
+  .bhi-vacation-package-details ul {
+    padding-left: 20px;
+    margin-top: 0px; }
+  .bhi-vacation-package-details .bhi-vacation-package-availability {
+    margin-bottom: 0px !important; }
+    .bhi-vacation-package-details .bhi-vacation-package-availability .fusion-column-wrapper {
+      background-color: white;
+      padding: 0px 10px !important;
+      margin-top: 10px;
+      display: inline-block; }
+    .bhi-vacation-package-details .bhi-vacation-package-availability h3, .bhi-vacation-package-details .bhi-vacation-package-availability h4 {
+      display: inline-block; }
+    .bhi-vacation-package-details .bhi-vacation-package-availability h3 {
+      margin-bottom: 0px;
+      margin-top: 5px; }
+    .bhi-vacation-package-details .bhi-vacation-package-availability h4 {
+      margin-top: 0px; }
+  .bhi-vacation-package-details .fusion-one-half {
+    margin-bottom: 0px !important; }
+    .bhi-vacation-package-details .fusion-one-half h3 {
+      margin-top: .25em;
+      margin-bottom: 0px; }
+  .bhi-vacation-package-details .fusion-one-half.fusion-column-last .fusion-column-wrapper {
+    padding-left: 15px; }
+  .bhi-vacation-package-details .fusion-one-full {
+    margin-bottom: 0px !important; }
+    .bhi-vacation-package-details .fusion-one-full p {
+      line-height: 1em;
+      font-weight: bold; }
+
 .bhi-contact-form {
   padding: 15px;
   border: 1px solid #62738a;
   border-radius: 4px;
-  background-color: #ece1c2; }
+  background-color: #ECE1C2; }
 
 li {
   line-height: 1.4em; }
@@ -381,7 +415,7 @@ div#sidebar div.fusion-button-wrapper {
   .team-member .team-member-text .panel-group {
     border-top: 1px solid #f1dfbb; }
   .team-member .team-member-text .fusion-accordian .panel-title a .fa-fusion-box {
-    background-color: #62738a; }
+    background-color: #62738A; }
   .team-member .team-member-text .fusion-accordian .panel-title .fusion-toggle-icon-wrapper {
     float: none;
     text-align: center; }
@@ -549,7 +583,7 @@ div.bhi-spa-icon div.heading-with-icon h2 {
   padding: 15px;
   border: 1px solid #62738a;
   border-radius: 4px;
-  background-color: #ece1c2; }
+  background-color: #ECE1C2; }
   #sidebar .bhi-sidebar-form .widget-title, #sidebar .bhi-contact-form .widget-title {
     text-align: center;
     font-weight: bold; }
@@ -561,12 +595,12 @@ div.bhi-spa-icon div.heading-with-icon h2 {
   content: "•";
   /* Insert content that looks like bullets */
   padding-right: 8px;
-  color: #62738a;
+  color: #62738A;
   /* Or a color you prefer */ }
 #sidebar .bhi-sidebar-menu img {
   border-radius: 4px; }
 #sidebar blockquote.easy_testimonial {
-  border: 1px solid #bb7e23;
+  border: 1px solid #BB7E23;
   border-radius: 4px;
   background-color: #f1dfbb;
   padding-top: 0px; }
