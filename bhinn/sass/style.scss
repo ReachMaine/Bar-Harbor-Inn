@@ -252,7 +252,15 @@ Text Domain:  Avada
 		padding-right: 30px;
 	}
 }
-// Styling individual vacation package pages
+// Styling vacation package pages
+.bhi-hide-button .fusion-button-wrapper {
+	display: none !important;
+}
+.bhi-packages{
+	.fusion-content-boxes.fusion-columns-1 .fusion-column, .fusion-content-boxes{
+		margin-bottom: 0px !important;
+	}
+}
 .bhi-vacation-package-details {
 	padding: 0px 20px !important;
 	background-color: #e0e0e0 !important;
