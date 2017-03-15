@@ -354,6 +354,9 @@ footer .wpcf7-form-control.wpcf7-email {
       line-height: 1em;
       font-weight: bold; }
 
+.bhi-check-rates .fusion-column-wrapper {
+  float: right; }
+
 .bhi-contact-form {
   padding: 15px;
   border: 1px solid #62738a;
