@@ -257,6 +257,12 @@ Text Domain:  Avada
 	display: none !important;
 }
 .bhi-packages{
+	.fusion-content-boxes .content-wrapper-background {
+		padding: 15px;
+		h3 {
+			font-size: 27px;
+		}
+	}
 	.fusion-content-boxes.fusion-columns-1 .fusion-column, .fusion-content-boxes{
 		margin-bottom: 0px !important;
 	}
@@ -311,6 +317,7 @@ Text Domain:  Avada
 
 .bhi-check-rates .fusion-column-wrapper {
 	float: right;
+	margin-right: -20px;
 }
 // contact form
 .bhi-contact-form { // generic form styling

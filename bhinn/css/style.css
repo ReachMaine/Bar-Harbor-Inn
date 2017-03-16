@@ -316,6 +316,10 @@ footer .wpcf7-form-control.wpcf7-email {
 .bhi-hide-button .fusion-button-wrapper {
   display: none !important; }
 
+.bhi-packages .fusion-content-boxes .content-wrapper-background {
+  padding: 15px; }
+  .bhi-packages .fusion-content-boxes .content-wrapper-background h3 {
+    font-size: 27px; }
 .bhi-packages .fusion-content-boxes.fusion-columns-1 .fusion-column, .bhi-packages .fusion-content-boxes {
   margin-bottom: 0px !important; }
 .bhi-packages h3 {
@@ -355,7 +359,8 @@ footer .wpcf7-form-control.wpcf7-email {
       font-weight: bold; }
 
 .bhi-check-rates .fusion-column-wrapper {
-  float: right; }
+  float: right;
+  margin-right: -20px; }
 
 .bhi-contact-form {
   padding: 15px;
