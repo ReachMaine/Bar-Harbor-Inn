@@ -374,13 +374,20 @@ form.woocommerce-ordering {
   #homepromo-wrapper .bhi-home-promo {
     padding-right: 0px;
     position: absolute;
-    right: 20%; } }
+    right: 20%; }
+
+  .bhi-check-rates .fusion-column-wrapper {
+    float: right; } }
 @media only screen and (min-width: 1300px) {
   .fusion-header .fusion-logo .fusion-logo-link img {
     margin-bottom: -40px; } }
 @media only screen and (max-width: 1024px) {
   .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link {
-    display: none; } }
+    display: none; }
+
+  h3.bhi-holiday-availability + .fusion-button-wrapper {
+    float: none;
+    margin-left: 0px; } }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 800px) {
   #homepromo-wrapper .bhi-home-promo img {

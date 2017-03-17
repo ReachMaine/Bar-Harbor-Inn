@@ -273,9 +273,24 @@ Text Domain:  Avada
 .bhi-vacation-package-details {
 	padding: 0px 20px !important;
 	background-color: #e0e0e0 !important;
+	margin: 10px 0px;
 	ul {
 		padding-left: 20px;
 		margin-top: 0px;
+	}
+	h2 {
+		margin-top: .45em;
+		margin-bottom: 0px;
+	}
+	h3.bhi-holiday-availability {
+		background-color: white;
+		padding: 5px 10px !important;
+		margin-top: 10px;
+		display: inline-block;
+		margin-bottom: 0px;
+	}
+	h3.bhi-holiday-availability + .fusion-button-wrapper {
+		margin-top: 5px;
 	}
 	.bhi-vacation-package-availability{
 		margin-bottom: 0px !important;
@@ -288,7 +303,7 @@ Text Domain:  Avada
 		h3, h4 {
 			display: inline-block;
 		}
-		h3 {
+		h3, h2 {
 			margin-bottom: 0px;
 			margin-top: 5px;
 		}
@@ -298,8 +313,8 @@ Text Domain:  Avada
 	}
 	.fusion-one-half {
 		margin-bottom: 0px !important;
-		h3 {
-			margin-top: .25em;
+		h3, h2 {
+			margin-top: .45em;
 			margin-bottom: 0px;
 		}
 	}
@@ -315,9 +330,12 @@ Text Domain:  Avada
 	}
 }
 
-.bhi-check-rates .fusion-column-wrapper {
-	float: right;
+.bhi-check-rates .fusion-column-wrapper, .bhi-check-rates-button {
 	margin-right: -20px;
+}
+
+h3.bhi-holiday-availability + .fusion-button-wrapper {
+	display: block;
 }
 // contact form
 .bhi-contact-form { // generic form styling

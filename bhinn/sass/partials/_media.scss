@@ -27,6 +27,9 @@
 		}
 
 	}
+	.bhi-check-rates .fusion-column-wrapper {
+		float: right;
+	}
 }
 @media only screen and (min-width: 1300px) {  // point at which logo need to stay up (not overlay the menu bar)
 	.fusion-header {
@@ -46,6 +49,10 @@
 				display: none;
 			}
 		}
+	}
+	h3.bhi-holiday-availability + .fusion-button-wrapper {
+		float:none;
+		margin-left: 0px;
 	}
 }
 /***************------------- 15. MOBILE -------------*****************/
@@ -137,7 +144,6 @@
 		margin-left: 20px;
 		margin-top: -176px!important;
 	}
-
 }
 // mobile menu size.
 @media only screen and (max-width: 1023px) { // point at which right links disables & mobile menu appears

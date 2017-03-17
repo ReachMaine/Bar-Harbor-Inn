@@ -327,10 +327,22 @@ footer .wpcf7-form-control.wpcf7-email {
 
 .bhi-vacation-package-details {
   padding: 0px 20px !important;
-  background-color: #e0e0e0 !important; }
+  background-color: #e0e0e0 !important;
+  margin: 10px 0px; }
   .bhi-vacation-package-details ul {
     padding-left: 20px;
     margin-top: 0px; }
+  .bhi-vacation-package-details h2 {
+    margin-top: .45em;
+    margin-bottom: 0px; }
+  .bhi-vacation-package-details h3.bhi-holiday-availability {
+    background-color: white;
+    padding: 5px 10px !important;
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 0px; }
+  .bhi-vacation-package-details h3.bhi-holiday-availability + .fusion-button-wrapper {
+    margin-top: 5px; }
   .bhi-vacation-package-details .bhi-vacation-package-availability {
     margin-bottom: 0px !important; }
     .bhi-vacation-package-details .bhi-vacation-package-availability .fusion-column-wrapper {
@@ -340,15 +352,15 @@ footer .wpcf7-form-control.wpcf7-email {
       display: inline-block; }
     .bhi-vacation-package-details .bhi-vacation-package-availability h3, .bhi-vacation-package-details .bhi-vacation-package-availability h4 {
       display: inline-block; }
-    .bhi-vacation-package-details .bhi-vacation-package-availability h3 {
+    .bhi-vacation-package-details .bhi-vacation-package-availability h3, .bhi-vacation-package-details .bhi-vacation-package-availability h2 {
       margin-bottom: 0px;
       margin-top: 5px; }
     .bhi-vacation-package-details .bhi-vacation-package-availability h4 {
       margin-top: 0px; }
   .bhi-vacation-package-details .fusion-one-half {
     margin-bottom: 0px !important; }
-    .bhi-vacation-package-details .fusion-one-half h3 {
-      margin-top: .25em;
+    .bhi-vacation-package-details .fusion-one-half h3, .bhi-vacation-package-details .fusion-one-half h2 {
+      margin-top: .45em;
       margin-bottom: 0px; }
   .bhi-vacation-package-details .fusion-one-half.fusion-column-last .fusion-column-wrapper {
     padding-left: 15px; }
@@ -358,9 +370,11 @@ footer .wpcf7-form-control.wpcf7-email {
       line-height: 1em;
       font-weight: bold; }
 
-.bhi-check-rates .fusion-column-wrapper {
-  float: right;
+.bhi-check-rates .fusion-column-wrapper, .bhi-check-rates-button {
   margin-right: -20px; }
+
+h3.bhi-holiday-availability + .fusion-button-wrapper {
+  display: block; }
 
 .bhi-contact-form {
   padding: 15px;
@@ -703,13 +717,20 @@ input#nyp {
   #homepromo-wrapper .bhi-home-promo {
     padding-right: 0px;
     position: absolute;
-    right: 20%; } }
+    right: 20%; }
+
+  .bhi-check-rates .fusion-column-wrapper {
+    float: right; } }
 @media only screen and (min-width: 1300px) {
   .fusion-header .fusion-logo .fusion-logo-link img {
     margin-bottom: -40px; } }
 @media only screen and (max-width: 1024px) {
   .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link {
-    display: none; } }
+    display: none; }
+
+  h3.bhi-holiday-availability + .fusion-button-wrapper {
+    float: none;
+    margin-left: 0px; } }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 800px) {
   #homepromo-wrapper .bhi-home-promo img {
