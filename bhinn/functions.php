@@ -1,12 +1,18 @@
 <?php
-	require_once(get_stylesheet_directory().'/custom/avada.php'); 
-	require_once(get_stylesheet_directory().'/custom/woocommerce.php'); 
-	require_once(get_stylesheet_directory().'/custom/checkavail.php'); 
-	
-	function theme_enqueue_styles() {
+	require_once(get_stylesheet_directory().'/custom/avada.php');
+	require_once(get_stylesheet_directory().'/custom/woocommerce.php');
+	require_once(get_stylesheet_directory().'/custom/checkavail.php');
+
+	/* old way... function theme_enqueue_styles() {
 	    wp_enqueue_style( 'avada-parent-stylesheet', get_template_directory_uri() . '/style.css' );
 	}
+		add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );*/
+/* new way in avada-child theme? */
+	function theme_enqueue_styles() {
+	    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'avada-stylesheet' ) );
+	}
 	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
 
 	function avada_lang_setup() {
 		$lang = get_stylesheet_directory() . '/languages';
@@ -25,7 +31,7 @@
 	function mysite_opengraph_image_size($val) {
 		return 'facebook_share';
 	}
-	
+
 		// contact form 7 fallback for date field  - only needed if use datepicker
 	add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 	add_filter( 'wpcf7_form_elements', 'mycustom_wpcf7_form_elements' );
@@ -35,7 +41,7 @@
 
 		return $form;
 	}
-	
+
 	/*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">
@@ -66,7 +72,7 @@
 	function add_favicon() {
 	  	$favicon_url = get_stylesheet_directory_uri() . '/images/admin-favicon.ico';
 		echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
-	} 
+	}
 	add_action( 'login_footer', 'reach_login_branding' );
 	function reach_login_branding() {
 		$outstring = "";
@@ -79,3 +85,14 @@
 		$outstring .= '</p>';
 		echo $outstring;
 	}
+// for migration to avada 5.0.x
+ function add_custom_post_types( $post_types ) {
+    $my_post_types = array(
+        'text-blocks',
+    );
+
+    $my_post_types = array_merge( $post_types, $my_post_types );
+
+    return $my_post_types;
+}
+add_filter( 'fusion_builder_shortcode_migration_post_types', 'add_custom_post_types' );
