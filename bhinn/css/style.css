@@ -21,6 +21,9 @@ Text Domain:  Avada
 .bhi-caption-center .wp-caption-text {
   float: none; }
 
+p {
+  line-height: 1.4em; }
+
 /* global classes */
 .bhi-clear {
   clear: both; }
@@ -242,6 +245,13 @@ footer .wpcf7-form-control.wpcf7-email {
     /* padding-left: 5%; */
     text-shadow: 1px 1px 1px #000000; }
 
+.bhi-homepage-boxes .fusion-content-boxes.fusion-columns-1 .fusion-column {
+  margin-bottom: 10px; }
+.bhi-homepage-boxes .fusion-content-boxes .content-wrapper-background {
+  padding: 20px; }
+.bhi-homepage-boxes .fusion-content-boxes .content-container {
+  margin-bottom: -5px; }
+
 .fusion-content-boxes.bhi-wide-box .content-box-column,
 .content-box-column.bhi-wide-box .content-box-column {
   margin-bottom: 10px; }
@@ -264,9 +274,12 @@ footer .wpcf7-form-control.wpcf7-email {
   .bhi-box .content-box-column .content-wrapper-background {
     padding-top: 16px;
     padding-left: 10px;
-    padding-right: 10px; }
-    .bhi-box .content-box-column .content-wrapper-background .content-container p {
-      line-height: 24px; }
+    padding-right: 10px;
+    padding-bottom: 10px; }
+    .bhi-box .content-box-column .content-wrapper-background .content-container {
+      margin-bottom: 0px; }
+      .bhi-box .content-box-column .content-wrapper-background .content-container p {
+        line-height: 24px; }
 
 .bhi-bottom-box {
   padding-bottom: 0px; }
@@ -324,6 +337,9 @@ footer .wpcf7-form-control.wpcf7-email {
   margin-bottom: 0px !important; }
 .bhi-packages h3 {
   margin-top: 0px !important; }
+.bhi-packages .fusion-column-first {
+  clear: none !important;
+  margin-right: 2% !important; }
 
 .bhi-vacation-package-details {
   padding: 0px 20px !important;
@@ -502,41 +518,59 @@ div.bhi-history-tabs li.active h4, div.bhi-area-info-tabs li.active h4, div.bhi-
   padding-left: 0px; }
 
 @media (min-width: 768px) {
-  .fusion-tabs.vertical-tabs.bhi-area-info-tabs .nav-tabs {
-    width: 21.5%; }
-
-  .fusion-tabs.vertical-tabs.bhi-history-tabs .nav-tabs {
-    width: 13.5%; }
-
-  .fusion-tabs.vertical-tabs.bhi-room-layout-tabs .nav-tabs {
-    width: 16%; }
-
-  .fusion-tabs.vertical-tabs.bhi-bayview-tabs .nav-tabs {
-    width: 39.5%; }
-
-  .fusion-tabs.vertical-tabs.bhi-careers-tabs .nav-tabs {
-    width: 18.5%; }
-
-  .fusion-tabs.vertical-tabs.bhi-luxury-tabs .nav-tabs {
+  .fusion-tabs.vertical-tabs.bhi-bayview-tabs .nav {
     width: 25.5%; }
 
-  .fusion-tabs.vertical-tabs.bhi-area-info-tabs .tab-content {
-    width: 73%; }
+  .fusion-tabs.vertical-tabs.bhi-luxury-tabs .nav {
+    width: 42.5%; }
 
-  .fusion-tabs.vertical-tabs.bhi-history-tabs .tab-content {
-    width: 86%; }
+   /*.fusion-tabs.vertical-tabs.bhi-area-info-tabs .nav-tabs {
+		width: 21.5% ;
+	}
 
-  .fusion-tabs.vertical-tabs.bhi-room-layout-tabs .tab-content {
-    width: 83.5%; }
+	.fusion-tabs.vertical-tabs.bhi-history-tabs .nav-tabs {
+		width: 13.5% ;
+	}
 
-  .fusion-tabs.vertical-tabs.bhi-bayview-tabs .tab-content {
-    width: 60.5%; }
+	.fusion-tabs.vertical-tabs.bhi-room-layout-tabs .nav-tabs {
+		width: 16%;
+	}
 
-  .fusion-tabs.vertical-tabs.bhi-careers-tabs .tab-content {
-    width: 81.5%; }
+	.fusion-tabs.vertical-tabs.bhi-bayview-tabs .nav-tabs {
+		width: 39.5%;
+	}
 
-  .fusion-tabs.vertical-tabs.bhi-luxury-tabs .tab-content {
-    width: 74.5%; } }
+	.fusion-tabs.vertical-tabs.bhi-careers-tabs .nav-tabs {
+		width: 18.5%;
+	}
+
+	.fusion-tabs.vertical-tabs.bhi-luxury-tabs .nav-tabs {
+		width: 25.5%;
+	}
+
+	.fusion-tabs.vertical-tabs.bhi-area-info-tabs .tab-content {
+		width: 73%;
+	}
+
+	.fusion-tabs.vertical-tabs.bhi-history-tabs .tab-content {
+		width: 86%;
+	}
+
+	.fusion-tabs.vertical-tabs.bhi-room-layout-tabs .tab-content {
+		width: 83.5%;
+	}
+
+	.fusion-tabs.vertical-tabs.bhi-bayview-tabs .tab-content {
+		width: 60.5%;
+	}
+
+	.fusion-tabs.vertical-tabs.bhi-careers-tabs .tab-content {
+		width: 81.5%;
+	}
+
+	.fusion-tabs.vertical-tabs.bhi-luxury-tabs .tab-content {
+		width: 74.5%;
+	}*/ }
 .bhi-rooms-tabs .fusion-tabs.vertical-tabs .tab-pane {
   padding: 5px; }
 .bhi-rooms-tabs img {

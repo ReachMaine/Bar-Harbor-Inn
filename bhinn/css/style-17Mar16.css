@@ -21,6 +21,9 @@ Text Domain:  Avada
 .bhi-caption-center .wp-caption-text {
   float: none; }
 
+p {
+  line-height: 1.4em; }
+
 /* global classes */
 .bhi-clear {
   clear: both; }

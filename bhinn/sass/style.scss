@@ -160,6 +160,21 @@ Text Domain:  Avada
 	}
 }
 // content boxes
+
+.bhi-homepage-boxes {
+	.fusion-content-boxes.fusion-columns-1 .fusion-column {
+		margin-bottom: 10px;
+	}
+	.fusion-content-boxes {
+		.content-wrapper-background {
+			padding: 20px;
+		}
+		.content-container {
+			margin-bottom: -5px;
+		}
+	}
+}
+
 .fusion-content-boxes.bhi-wide-box, // used on spa page boxes.
 .content-box-column.bhi-wide-box { // wider content boxes - knock down some of the padding.
 	.content-box-column {
@@ -188,6 +203,7 @@ Text Domain:  Avada
 			padding-top: 16px;
 			padding-left: 10px;
 			padding-right: 10px;
+			padding-bottom: 10px;
 			.content-container {
 				h2 {
 					//line-height: 28px; set in theme options
@@ -195,6 +211,7 @@ Text Domain:  Avada
 				p {
 					line-height: 24px;
 				}
+				margin-bottom: 0px;
 			}
 		}
 	}
@@ -268,6 +285,10 @@ Text Domain:  Avada
 	}
 	h3 {
 		margin-top: 0px !important;
+	}
+	.fusion-column-first {
+		clear: none !important;
+		margin-right: 2% !important;
 	}
 }
 .bhi-vacation-package-details {
@@ -525,7 +546,14 @@ div.bhi-history-tabs li.active h4, div.bhi-area-info-tabs li.active h4, div.bhi-
 
 @media (min-width: 768px) {
 
-   .fusion-tabs.vertical-tabs.bhi-area-info-tabs .nav-tabs {
+	.fusion-tabs.vertical-tabs.bhi-bayview-tabs .nav {
+		width: 25.5%;
+	}
+	.fusion-tabs.vertical-tabs.bhi-luxury-tabs .nav {
+		width: 42.5%;
+	}
+
+   /*.fusion-tabs.vertical-tabs.bhi-area-info-tabs .nav-tabs {
 		width: 21.5% ;
 	}
 
@@ -571,7 +599,7 @@ div.bhi-history-tabs li.active h4, div.bhi-area-info-tabs li.active h4, div.bhi-
 
 	.fusion-tabs.vertical-tabs.bhi-luxury-tabs .tab-content {
 		width: 74.5%;
-	}
+	}*/
 }
 
 .bhi-rooms-tabs {
