@@ -153,11 +153,12 @@ footer .wpcf7-form-control.wpcf7-email {
   .fusion-header-v4 .fusion-secondary-header ul#menu-topbar li {
     border-left: 0px; }
     .fusion-header-v4 .fusion-secondary-header ul#menu-topbar li a {
-      display: block; }
+      display: block;
+      margin-top: 18px; }
   .fusion-header-v4 .fusion-secondary-header ul#menu-topbar li:not(:first-child):before {
     content: "|";
     float: left;
-    padding-top: 9px; }
+    padding-top: 18px; }
 .fusion-header-v4 .fusion-header {
   background-color: #62738A !important;
   padding-top: 10px;

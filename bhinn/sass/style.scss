@@ -20,12 +20,13 @@ Text Domain:  Avada
 				border-left: 0px;
 				a {
 					display: block;
+					margin-top: 18px;
 				}
 			}
 			li:not(:first-child):before {
 				content:"|";
 				float: left;
-				padding-top: 9px;
+				padding-top: 18px;
 			}
 		}
 	}
