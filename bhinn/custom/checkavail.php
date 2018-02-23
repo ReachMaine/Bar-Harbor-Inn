@@ -55,7 +55,7 @@ if (!function_exists('travellink_button_link')) {
 		$js_out .= '     var d_startdate = new Date(str_indate);';
 		$js_out .= '	 var today = new Date();';
 		$js_out .= '     if (d_startdate < today) { d_startdate = today; }'; // cant be in past.
-		$js_out .= '     var mm = d_startdate.getMonth() + 1;';
+		$js_out .= '     var mm = d_startdate.getUTCMonth() + 1;';
 		$js_out .= '	 mm = (mm <10)? "0" + mm : mm;';
 		$js_out .= '	 var dd = d_startdate.getUTCDate();';  // watch out for Daylight savings time s.t. need UTCDate
 		$js_out .= ' 	 dd = dd < 10 ? "0" + dd : dd;';
