@@ -219,7 +219,8 @@ footer .wpcf7-form-control.wpcf7-email {
   text-align: right; }
   #homepromo-wrapper .bhi-home-promo {
     padding-top: 2%;
-    padding-right: 2%; }
+    padding-right: 2%;
+    position: absolute; }
 
 /* ***** homepage slideshow */
 #sliders-container .slide-content-container {
@@ -657,7 +658,7 @@ div.bhi-spa-icon div.heading-with-icon h2 {
   #sidebar .open-table-widget .otw-button-wrap .otw-submit {
     border: 0px; }
 #sidebar .bhi-dining-breakfast ul li:before {
-  content: "•";
+  content: "ΓÇó";
   /* Insert content that looks like bullets */
   padding-right: 8px;
   color: #62738A;
@@ -748,10 +749,12 @@ input#nyp {
  * (max-width: 640px)
  * (min-width: 768px)
 */
+@media only screen and (min-width: 768px) {
+  #homepromo-wrapper .bhi-home-promo {
+    right: 10%; } }
 @media only screen and (min-width: 1600px) {
   #homepromo-wrapper .bhi-home-promo {
     padding-right: 0px;
-    position: absolute;
     right: 20%; }
 
   .bhi-check-rates .fusion-column-wrapper {
@@ -768,9 +771,6 @@ input#nyp {
     margin-left: 0px; } }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 800px) {
-  #homepromo-wrapper .bhi-home-promo img {
-    height: 200px; }
-
   .fusion-header-v4 .fusion-header .fusion-logo .fusion-logo-link {
     display: none; }
   .fusion-header-v4 .fusion-header .fusion-logo .bhi_site_title_wrapper {
@@ -786,10 +786,12 @@ input#nyp {
     padding: 0px;
     margin: 0px;
     visibility: hidden; } }
+@media only screen and (max-width: 767px) {
+  #homepromo-wrapper .bhi-home-promo {
+    right: 0px; }
+    #homepromo-wrapper .bhi-home-promo img {
+      max-width: 50%; } }
 @media only screen and (max-width: 500px) {
-  #homepromo-wrapper .bhi-home-promo img {
-    height: 125px; }
-
   .fusion-header-wrapper .fusion-secondary-header .fusion-secondary-menu {
     display: none; }
 

@@ -18,11 +18,18 @@
  * (max-width: 640px)
  * (min-width: 768px)
 */
+@media only screen and (min-width: 768px)  { // NOT mobile
+	#homepromo-wrapper {
+		.bhi-home-promo {
+			right: 10%;
+		}
+	}
+}
 @media only screen and (min-width: 1600px) {
 	#homepromo-wrapper {
 		.bhi-home-promo {
 			padding-right: 0px;
-			position: absolute;
+			//position: absolute;
 			right: 20%;
 		}
 
@@ -55,11 +62,12 @@
 		margin-left: 0px;
 	}
 }
+
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 800px)  { // mobile
 	#homepromo-wrapper {
 		.bhi-home-promo img {
-			height: 200px;
+			//height: 200px;
 		}
 
 	}
@@ -88,13 +96,19 @@
 		visibility: hidden;
 	}
 }
-@media only screen and (max-width: 500px)  { // kinda arbitary - for smaller (phone) size
+@media only screen and (max-width: 767px) {
 	#homepromo-wrapper {
-		.bhi-home-promo img {
-			height: 125px;
+		.bhi-home-promo {
+			right: 0px;
+				img {
+				//height: 125px;
+				max-width: 50%;
+			}
 		}
-
 	}
+}
+@media only screen and (max-width: 500px)  { // kinda arbitary - for smaller (phone) size
+	
 	.fusion-header-wrapper .fusion-secondary-header {
 		.fusion-secondary-menu {
 			display: none;
