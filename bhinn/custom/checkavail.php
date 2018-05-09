@@ -47,6 +47,7 @@ if (!function_exists('travellink_button_link')) {
 		// javascript for the onClick event
 		$js_out .= '<script>function travellink_button_funct(){';
 		$js_out .= '  var win_target = "'.$window_target.'?hotelid='.$atts['hotelid'].'"; ';
+		$js_out .= '  win_target = AppendNavisKeywordToURL(win_target);';
 		$js_out .= '  var str_indate = document.getElementById("date-arrive").value; ';
 		$js_out .= '  var num_nights = document.getElementById("number-nights").value; ';
 		$js_out .= '  var num_adults = document.getElementById("number-adults").value; ';
