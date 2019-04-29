@@ -3,12 +3,12 @@
 	add_action('avada_logo_append', 'bhi_site_tagline', 10);
 	function bhi_site_tagline() {
 		$html_out = '';
-		$html_out .= '<div class="bhi_site_title_wrapper">';
+		$html_out .= '<div class="bhi_site_title_wrapper" style="margin: 0 auto !important;">';
 		/* $html_out .= 	'<h1 class="bhi_site_title">'; */
 		$html_out .= 		'<a href="'.site_url().'">';
 		/* v1 -  $html_out .= 			get_bloginfo('name', 'raw'); */
 		/* v2 - $html_out .= '<span class="firstletter">B</span>AR <span class="firstletter">H</span>ARBOR <span class="firstletter">I</span>NN'; */
-		$html_out .= '<img src="'.get_stylesheet_directory_uri().'/images/bhi_text_logo.png">';
+		$html_out .= '<img src="'.get_stylesheet_directory_uri().'/images/2018-BarHarborInn-Logo.png">';
 		$html_out .= 		'</a>';
 		/* $html_out .= 	"</h1>"; */
 		$html_out .= '</div>'; // title_wrapper
